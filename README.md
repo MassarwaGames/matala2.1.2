@@ -22,7 +22,6 @@ The player’s movement and the mini-map functionality are seamlessly integrated
 - Configurations:
   - **MiniMapCamera**: Tracks the player while maintaining a fixed height.
   - **Viewport Rect**: Resizes and positions the mini-map in the top-right corner.
-
+### link to itch.io game page
+[Itch.io Page](https://blackeswadeh.itch.io/question2-game)
 ---
-
-[Itch.io Page](https://blackeswadeh.itch.io/question2-game) 
