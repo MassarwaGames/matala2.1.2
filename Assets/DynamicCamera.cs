@@ -2,7 +2,12 @@ using UnityEngine;
 
 public class DynamicCamera : MonoBehaviour
 {
+
     Camera mainCamera;
+    [SerializeField]
+    [Tooltip("Base orthographic size for the camera")]
+    float baseOrthographicSize = 5f;
+
 
     void Start()
     {
@@ -14,6 +19,6 @@ public class DynamicCamera : MonoBehaviour
     {
         // Adjust camera size based on aspect ratio
         float aspectRatio = (float)Screen.width / Screen.height;
-        mainCamera.orthographicSize = 5f / aspectRatio;
+        mainCamera.orthographicSize = baseOrthographicSize / aspectRatio;
     }
 }

@@ -5,6 +5,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     [Tooltip("Movement speed of the player")]
     float speed = 5f;
+    [SerializeField]
+    [Tooltip("Fixed Z position for player movement in a 2D environment")]
+    float fixedZPosition = 0f;
 
     Transform objectTransform;
 
@@ -21,7 +24,7 @@ public class PlayerController : MonoBehaviour
         float moveY = Input.GetAxis("Vertical");
 
         // Apply movement
-        objectTransform.position += new Vector3(moveX, moveY, 0) * speed * Time.deltaTime;
+        objectTransform.position += new Vector3(moveX, moveY, fixedZPosition) * speed * Time.deltaTime;
     }
 }
 
